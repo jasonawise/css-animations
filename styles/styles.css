@@ -1,0 +1,31 @@
+body {
+  background-color: antiquewhite;
+}
+
+.ball {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: coral;
+  animation: bounce 7s ease 1 normal;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0,0);
+  }
+  25% {
+    transform: translate(55px, 100vh);
+  }
+  50% {
+    transform: translate(150px, 75px);
+  }
+
+  75% {
+    transform: translate(175px, 100vh);
+  }
+
+  100% {
+    transform: translate(200px, 150px);
+  }
+}
